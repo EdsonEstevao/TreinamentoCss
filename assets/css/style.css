@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background: url("../imgs/img-home/fundo3.png");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:1700px;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+#menuHamburguer{
+    background-color: #34759b;
+    width: 40px;    
+    display: block;
+    cursor: pointer;
+    border:1px solid #0d2001;
+    padding: 5px;
+    margin: 5px 0 0 5px;
+
+    
+}
+#menuHamburguer:hover{
+    border-top:1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
+    border-bottom: 3px solid #4d4d4d;
+    border-left: 3px solid #4d4d4d;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    left: -1000000px;
+    display: none;
+}
+nav {
+    background-color: rgba(16,16,16,0.4);
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -350px;
+    transition: all 0.5s linear;
+}
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+
+
+}
+ul{ 
+ top: 45px;
+ position: absolute;
+ width: 100%; 
+}
+ul li a { 
+    padding-left: 15px;
+    
+}
+a {    
+    display: block;
+    padding: 20px 5px;
+    color: #fff;
+}
+a:hover{
+    /* background-color: rgb(176, 224, 230); */
+    color: #000;
+    transition: all 0.4s linear;
+    background: linear-gradient(45deg, #b0e0e6, transparent);    
+}
+
+label{    
+    position: absolute;    
+    z-index: 1;
+}

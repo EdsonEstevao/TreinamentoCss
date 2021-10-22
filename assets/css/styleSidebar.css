@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 20px 20px;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #042331;
+    transition: 0.4s;
+}
+.sidebar header {
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+    line-height: 70px;
+    background-color: #063146;
+    user-select: none;
+}
+.sidebar .area-title {
+    margin-top: 10px;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sidebar ul a {    
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid #000;    
+    transition: 0.4s;
+    
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+ul li a i {
+    margin: 0 10px
+}
+.sidebar ul a li {
+    margin-right: 16px;
+}
+
+#check {
+    position: absolute;
+    left: -10000px;
+    display: none;
+}
+/* label #btn, 
+.area-title label #cancel  */
+label #btn {
+    background-color: #042331;
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;    
+}
+.area-title .title {
+    margin: auto;
+}
+.area-title #cancel {
+    background-color: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.area-title #cancel:hover {
+    color: #fff;
+
+}
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 25px;
+    color: rgb(238, 235, 235);    
+    padding: 6px 10px;
+    transition: all 0.5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 23px;
+    font-size: 18px;    
+    color: #1997d6;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+.area-title label #cancel {
+    left: -195px;    
+}
+#check:checked ~.sidebar {
+    left: 0;    
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ .area-title label #cancel {
+    left: 195px;
+}
+
+section {
+    background: url("../imgs/img-home/fundo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: all 0.4s linear;
+}
+#check:checked ~ section {
+    margin-left: 250px;
+}

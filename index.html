@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aprendizado Css</title>
+</head>
+<body>    
+    <div class="header">
+               <h1>Olá, Mundo!</h1>                
+    </div>
+    <hr/>
+    <h1>Formulário</h1>
+    <div class="container">
+        <form method="post" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="">
+                    Primeiro Nome:<br/>
+                    <input type="text" name="name" id="" required>
+                </label>
+                <label for="">
+                    Sobrenome: <br/>
+                    <input type="text" name="lastname" id="">
+                </label>
+                <label for="">
+                    E-mail: <br/>
+                    <input type="text" name="email" id="" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Endereço de email"/>
+                </label>
+                <label for="">
+                    Data de nascimento: <br/>
+                    <input type="date" name="age" id="" required>
+                </label>            
+                <label for="">
+                    Foto <br/>
+                    <input type="file" name="file" id="" accept=".pdf,.doc,.docx,.xlsx">
+                </label>  
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="">
+                    Nome da empresa: <br/>
+                    <input type="text" name="name" id="">
+                </label>
+                <label for="">
+                    Cargo na empresa: <br/>
+                    <input type="text" name="name" id="">
+                </label>
+            </fieldset>
+            
+            
+            <input type="submit" value="Cadastrar" class="btn-classic">
+        </form>
+    </div>
+    
+    <hr/>
+    
+
+    
+</body>
+</html>
