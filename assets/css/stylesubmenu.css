@@ -1,0 +1,118 @@
+*{
+    margin: 0;    
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif,Verdana, Geneva, Tahoma;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.menuLateral {
+    background-color: #333;
+    /* background: rgba(51, 51, 51, 0.6); */
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -250px;
+    transition: all 0.5s linear;
+}
+.menuLateral .titulo {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 24px;
+    border-bottom: #e00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 20px;
+}
+.menuLateral ul li {
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+}
+.menuLateral ul li a {
+    color: #fff;
+    /* font-size: 20px; */
+    font-size: 1rem;
+    padding-left: 20px;
+    font-weight: bold;
+    display: block;
+    transition: all 0.4s linear;
+}
+.menuLateral ul li a:hover { 
+    background-color: #370707;
+
+}   
+/* submenu */
+.menuLateral ul li ul {    
+    background-color: #131313;    
+}
+.menuLateral ul ul li a {
+    /* font-size: 16px; */
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-left: 60px;    
+ } 
+ .menuLateral ul ul {
+     display: none;     
+ }
+ 
+ .menuLateral ul .submenu-itens.show {
+     display: block;
+ }
+ .menuLateral ul li a {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-right: 30px;
+ }
+
+
+
+/* fim submenu */
+
+/* botão menu */
+.menushow {
+    position: absolute;
+    top:15px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;        
+}
+.menushow span {
+    font-size: 25px;
+    cursor: pointer;
+}
+.menushow:hover span {
+    background-color: #fff;
+    color:#333;
+}
+.menuLateral.show {
+    margin-left: 0;
+}
+.menuhide:hover span{        
+    cursor: pointer;
+    background-color: #cecece;
+    color: rgb(49, 9, 9);
+    border-radius: 3px;
+    transition: all 0.3s linear;
+}
+/* Conteúdo */
+section {    
+    height: 100vh;
+    background: url(../imgs/img-home/fundo2.png);
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: contain;
+    margin-left: 0;
+    transition: all 0.5s linear;
+}
