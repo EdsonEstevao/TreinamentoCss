@@ -73,6 +73,7 @@ header {
     color: #fff;
     margin-top: 5px;
     margin-bottom: 20px;
+    transition: all 0.5s linear;
 }
 .sidebar a {
     text-decoration: none;
@@ -140,4 +141,7 @@ label #sidebar_btn:hover {
 }
 #check:checked ~ .content {
    margin-left: 190px;
+}
+#check:checked ~ .sidebar h2 {
+    display: none;
 }
