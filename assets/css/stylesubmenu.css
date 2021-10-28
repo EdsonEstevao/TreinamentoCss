@@ -12,9 +12,6 @@ a {
 }
 .menuLateral {
     background-color: #333;
-
-    /* background-color: #333; */
-    /* background: #1f4b806e; */
     background: rgba(51, 51, 51, 0.6);
     width: 250px;
     height: 100vh;
@@ -38,6 +35,7 @@ a {
     line-height: 40px;
     border-bottom: 1px solid #fff;
 }
+
 .menuLateral ul ul li:nth-last-child(){
     border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
@@ -78,12 +76,10 @@ a {
      padding-right: 30px;
  }
 
+
  ul.submenu-itens.show li:last-child {     
      border-bottom: 1px solid rgba(51, 51, 51, 0.0);     
  }
-
-
-
 /* fim submenu */
 
 /* botão menu */
@@ -118,13 +114,12 @@ a {
 }
 /* Conteúdo */
 section {    
-    height: 100vh;
-    background: url(../imgs/img-home/fundo1.png);
+    height: 100vh;    
+    background: url(../imgs/img-home/fundo2.png);
     background-position: center;
     background-repeat: no-repeat;    
     background-size: contain;
     margin-left: 0;
     transition: all 0.5s linear;
     background-color: #eee;
-
 }
