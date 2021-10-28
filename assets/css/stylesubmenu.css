@@ -11,13 +11,11 @@ a {
     text-decoration: none;
 }
 .menuLateral {
-/* <<<<<<< HEAD */
     background-color: #333;
-/* ======= */
+
     /* background-color: #333; */
-    background: #1f4b806e;
-/* >>>>>>> 6e4c438fbe95ea7b3e73cc41402c630d361f823c */
-    /* background: rgba(51, 51, 51, 0.6); */
+    /* background: #1f4b806e; */
+    background: rgba(51, 51, 51, 0.6);
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -39,6 +37,9 @@ a {
 .menuLateral ul li {
     line-height: 40px;
     border-bottom: 1px solid #fff;
+}
+.menuLateral ul ul li:nth-last-child(){
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 .menuLateral ul li a {
     color: #fff;
@@ -77,6 +78,10 @@ a {
      padding-right: 30px;
  }
 
+ ul.submenu-itens.show li:last-child {     
+     border-bottom: 1px solid rgba(51, 51, 51, 0.0);     
+ }
+
 
 
 /* fim submenu */
@@ -112,20 +117,14 @@ a {
     transition: all 0.3s linear;
 }
 /* Conteúdo */
-/* <<<<<<< HEAD
-======= */
-/* body{ */
-/* >>>>>>> 6e4c438fbe95ea7b3e73cc41402c630d361f823c */
 section {    
     height: 100vh;
-    background: url(../imgs/img-home/fundo2.png);
+    background: url(../imgs/img-home/fundo1.png);
     background-position: center;
     background-repeat: no-repeat;    
     background-size: contain;
     margin-left: 0;
     transition: all 0.5s linear;
-/* <<<<<<< HEAD */
-/* ======= */
     background-color: #eee;
-/* >>>>>>> 6e4c438fbe95ea7b3e73cc41402c630d361f823c */
+
 }
